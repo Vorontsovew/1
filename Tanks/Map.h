@@ -14,22 +14,22 @@ using FnObject = std::function<void(GeneralMapObjectData)>;
 // у нас реализация для карты, поэтому будем сообщать об изменениях данных карты
 struct IDispetcher
 {
-	virtual void AddListener(FnMapModify) = 0;
+  virtual void AddListener(FnMapModify) = 0;
 };
 
 //интерфейс карты/игрового поля
 struct IMap: IDispetcher
 {
-	virtual void UpdateObject(size_t obj, MapObjectData data) = 0;
-	virtual std::optional<MapObjectData> GetMapObjectData(size_t id) = 0;
-	virtual void AddBullet(MapObjectData data, BulletType type) = 0;
-	virtual void AddTank(MapObjectData data, TankType type) = 0;
-	virtual void DeleteObject(size_t id)=0;
-	virtual Size GetSize() = 0;
-	virtual const MapObject* FindObject(Point) const = 0;
-	virtual void ForEachObject(FnObject) const = 0;
-	virtual std::vector<std::pair<size_t, GeneralMapObjectData>> GetGeneralData() const = 0;
-	virtual void SetGeneralData(const std::vector<std::pair< size_t, GeneralMapObjectData>>& objects) = 0;
+  virtual void UpdateObject(size_t obj, MapObjectData data) = 0;
+  virtual std::optional<MapObjectData> GetMapObjectData(size_t id) = 0;
+  virtual void AddBullet(MapObjectData data, BulletType type) = 0;
+  virtual void AddTank(MapObjectData data, TankType type) = 0;
+  virtual void DeleteObject(size_t id)=0;
+  virtual Size GetSize() = 0;
+  virtual const MapObject* FindObject(Point) const = 0;
+  virtual void ForEachObject(FnObject) const = 0;
+  virtual std::vector<std::pair<size_t, GeneralMapObjectData>> GetGeneralData() const = 0;
+  virtual void SetGeneralData(const std::vector<std::pair< size_t, GeneralMapObjectData>>& objects) = 0;
 };
 
 

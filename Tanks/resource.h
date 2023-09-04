@@ -85,11 +85,11 @@
 #define IDS_EXPLORER                    305
 #define IDS_EDIT_MENU                   306
 #define IDB_PLAYER_TANK                 308
-#define IDB_ENEMY_TANK					309
-#define IDB_WALL						310
-#define IDB_FOREST						311
-#define IDB_ICE							312
-#define IDB_BULLET						313
+#define IDB_ENEMY_TANK          309
+#define IDB_WALL            310
+#define IDB_FOREST            311
+#define IDB_ICE              312
+#define IDB_BULLET            313
 
 
 // Next default values for new objects

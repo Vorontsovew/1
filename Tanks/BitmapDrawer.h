@@ -9,15 +9,15 @@
 class GeneralDrawer : public IDrawer
 {
 public:
-	GeneralDrawer(Bitmaps icon, MapObjectData data) :m_icon(icon), m_data(data)
-	{};
+  GeneralDrawer(Bitmaps icon, MapObjectData data) :m_icon(icon), m_data(data)
+  {};
 
-	virtual void Draw(IDrawContext&) const;
+  virtual void Draw(IDrawContext&) const;
 private:
-	MapObjectData m_data;
-	Bitmaps m_icon;
+  MapObjectData m_data;
+  Bitmaps m_icon;
 
-	
+  
 };
 
 

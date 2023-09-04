@@ -11,52 +11,52 @@ enum class Orientation
 
 enum class ObjectTypes
 {
-	Tank, Barrier, Bullet, Count
+  Tank, Barrier, Bullet, Count
 };
 
 enum class TankType
 {
-	Player, Enemy, Count
+  Player, Enemy, Count
 };
 
 
 enum class BarrierType
 {
-	Wall, Forest, Ice, Count
+  Wall, Forest, Ice, Count
 };
 
 enum class BulletType
 {
-	BulletLight, Count
+  BulletLight, Count
 };
 
 struct Point
 {
-	int x;
-	int y;
-	auto operator<=>(const Point&) const = default;
+  int x;
+  int y;
+  auto operator<=>(const Point&) const = default;
 
 };
 
 struct Size
 {
-	int cx;
-	int cy;
+  int cx;
+  int cy;
 };
 
 //данные объектов карты(позиция, оиент
 struct MapObjectData
 {
-	Point m_position;
-	Orientation m_orientation;
+  Point m_position;
+  Orientation m_orientation;
 };
 
 //полные данные объекта (описывают объект полностью
 struct GeneralMapObjectData
 {
-	MapObjectData mo_data;
-	//ObjectTypes type;
-	std::variant<TankType, BarrierType, BulletType> type;
+  MapObjectData mo_data;
+  //ObjectTypes type;
+  std::variant<TankType, BarrierType, BulletType> type;
 };
 
 //слушатель изменений карты - функциональный объект
@@ -64,7 +64,7 @@ struct GeneralMapObjectData
 
 struct IListener
 {
-	virtual void OnMapModify(std::span<std::pair<size_t, GeneralMapObjectData> const> objects) = 0;
+  virtual void OnMapModify(std::span<std::pair<size_t, GeneralMapObjectData> const> objects) = 0;
 };
 
 using FnMapModify = IListener*;

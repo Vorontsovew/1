@@ -6,5 +6,5 @@
 
 std::size_t IdGenerator::generate()
 {
-	return ++m_globalId;
+  return ++m_globalId;
 }

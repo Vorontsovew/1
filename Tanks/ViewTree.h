@@ -8,16 +8,16 @@ class CViewTree : public CTreeCtrl
 {
 // Создание
 public:
-	CViewTree() noexcept;
+  CViewTree() noexcept;
 
 // Переопределение
 protected:
-	virtual BOOL OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult);
+  virtual BOOL OnNotify(WPARAM wParam, LPARAM lParam, LRESULT* pResult);
 
 // Реализация
 public:
-	virtual ~CViewTree();
+  virtual ~CViewTree();
 
 protected:
-	DECLARE_MESSAGE_MAP()
+  DECLARE_MESSAGE_MAP()
 };

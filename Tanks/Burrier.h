@@ -6,11 +6,11 @@
 class Burrier : public MapObject
 {
 public:
-	Burrier(MapObjectData&, BarrierType, IdGenerator&);
-	BarrierType GetType();
-	virtual void Accept(MapObjectVisitor&) override;
+  Burrier(MapObjectData&, BarrierType, IdGenerator&);
+  BarrierType GetType();
+  virtual void Accept(MapObjectVisitor&) override;
 
 private:
-	BarrierType m_type;
+  BarrierType m_type;
 };
 

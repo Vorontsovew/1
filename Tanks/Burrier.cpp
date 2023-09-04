@@ -5,8 +5,8 @@
 #endif
 
 Burrier::Burrier(MapObjectData& data, BarrierType type, IdGenerator& generator) 
-	: MapObject(data, generator)
-	, m_type(type) 
+  : MapObject(data, generator)
+  , m_type(type) 
 {
 
 }
@@ -14,15 +14,15 @@ Burrier::Burrier(MapObjectData& data, BarrierType type, IdGenerator& generator)
 
 BarrierType Burrier::GetType()
 {
-	return m_type;
+  return m_type;
 }
 
 void Burrier::Accept(MapObjectVisitor& visitor)
 {
-	visitor.Visit(*this);
+  visitor.Visit(*this);
 }
 
 //void Burrier::SetData(MapObjectData& data)
 //{
-	//m_mapObjectData = data;
+  //m_mapObjectData = data;
 //}       
