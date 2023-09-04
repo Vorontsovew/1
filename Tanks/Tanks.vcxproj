@@ -76,6 +76,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>Draw;Controller;Model;Application;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -85,6 +86,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>Draw;Controller;Model;Application;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -185,64 +187,64 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BitmapDrawer.h" />
-    <ClInclude Include="Bitmaps.h" />
-    <ClInclude Include="Bullet.h" />
-    <ClInclude Include="Burrier.h" />
-    <ClInclude Include="ClassView.h" />
-    <ClInclude Include="CreateDrawers.h" />
-    <ClInclude Include="DrawContext.h" />
-    <ClInclude Include="IDrawer.h" />
-    <ClInclude Include="FileView.h" />
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="IdGenerator.h" />
-    <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="Map.h" />
-    <ClInclude Include="MapGenerator.h" />
-    <ClInclude Include="MapModifier.h" />
-    <ClInclude Include="MapObject.h" />
-    <ClInclude Include="MapObjectData.h" />
-    <ClInclude Include="MapObjectVisitor.h" />
-    <ClInclude Include="Notifier.h" />
-    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Draw/BitmapDrawer.h" />
+    <ClInclude Include="Draw/Bitmaps.h" />
+    <ClInclude Include="Model/Bullet.h" />
+    <ClInclude Include="Model/Burrier.h" />
+    <ClInclude Include="Application/ClassView.h" />
+    <ClInclude Include="Draw/CreateDrawers.h" />
+    <ClInclude Include="Draw/DrawContext.h" />
+    <ClInclude Include="Draw/IDrawer.h" />
+    <ClInclude Include="Application/FileView.h" />
+    <ClInclude Include="Application/framework.h" />
+    <ClInclude Include="Model/IdGenerator.h" />
+    <ClInclude Include="Application/MainFrm.h" />
+    <ClInclude Include="Model/Map.h" />
+    <ClInclude Include="Model/MapGenerator.h" />
+    <ClInclude Include="Controller/MapModifier.h" />
+    <ClInclude Include="Model/MapObject.h" />
+    <ClInclude Include="Model/MapObjectData.h" />
+    <ClInclude Include="Model/MapObjectVisitor.h" />
+    <ClInclude Include="Application/Notifier.h" />
+    <ClInclude Include="Application/OutputWnd.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="Application/PropertiesWnd.h" />
     <ClInclude Include="Resource.h" />
-    <ClInclude Include="Tank.h" />
+    <ClInclude Include="Model/Tank.h" />
     <ClInclude Include="Tanks.h" />
-    <ClInclude Include="TanksDoc.h" />
-    <ClInclude Include="TanksView.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="Application/TanksDoc.h" />
+    <ClInclude Include="Application/TanksView.h" />
+    <ClInclude Include="Application/targetver.h" />
+    <ClInclude Include="Application/ViewTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BitmapDrawer.cpp" />
-    <ClCompile Include="Bullet.cpp" />
-    <ClCompile Include="Burrier.cpp" />
-    <ClCompile Include="ClassView.cpp" />
-    <ClCompile Include="CreateDrawers.cpp" />
-    <ClCompile Include="DrawContext.cpp" />
-    <ClCompile Include="FileView.cpp" />
-    <ClCompile Include="IdGenerator.cpp" />
-    <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="MapModifier.cpp" />
-    <ClCompile Include="MapObject.cpp" />
-    <ClCompile Include="MapObjectData.cpp" />
-    <ClCompile Include="Notifier.cpp" />
-    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="Controller\MapModifier.cpp" />
+    <ClCompile Include="Draw/BitmapDrawer.cpp" />
+    <ClCompile Include="Model/Bullet.cpp" />
+    <ClCompile Include="Model/Burrier.cpp" />
+    <ClCompile Include="Application/ClassView.cpp" />
+    <ClCompile Include="Draw/CreateDrawers.cpp" />
+    <ClCompile Include="Draw/DrawContext.cpp" />
+    <ClCompile Include="Application/FileView.cpp" />
+    <ClCompile Include="Model/IdGenerator.cpp" />
+    <ClCompile Include="Application/MainFrm.cpp" />
+    <ClCompile Include="Model/Map.cpp" />
+    <ClCompile Include="Model/MapObject.cpp" />
+    <ClCompile Include="Model/MapObjectData.cpp" />
+    <ClCompile Include="Application/Notifier.cpp" />
+    <ClCompile Include="Application/OutputWnd.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="PropertiesWnd.cpp" />
-    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="Application/PropertiesWnd.cpp" />
+    <ClCompile Include="Model/Tank.cpp" />
     <ClCompile Include="Tanks.cpp" />
-    <ClCompile Include="TanksDoc.cpp" />
-    <ClCompile Include="TanksView.cpp" />
-    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="Application/TanksDoc.cpp" />
+    <ClCompile Include="Application/TanksView.cpp" />
+    <ClCompile Include="Application/ViewTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Tanks.rc" />

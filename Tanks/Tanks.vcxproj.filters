@@ -13,171 +13,171 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Modules">
-      <UniqueIdentifier>{533339c8-35a9-45ef-8202-e3221a6ffe58}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Control">
-      <UniqueIdentifier>{ab099cd8-6324-4eed-b34f-16ded7d08343}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Draw">
       <UniqueIdentifier>{bd665666-fcbb-4737-a054-2aa02b788904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{533339c8-35a9-45ef-8202-e3221a6ffe58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{ab099cd8-6324-4eed-b34f-16ded7d08343}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tanks.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="framework.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="MainFrm.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TanksDoc.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TanksView.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="FileView.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassView.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewTree.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="OutputWnd.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="PropertiesWnd.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="MapObject.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/ClassView.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="MapObjectData.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/FileView.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Tank.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/framework.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Burrier.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/MainFrm.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Bullet.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/Notifier.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/OutputWnd.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="MapGenerator.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Application/PropertiesWnd.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="IDrawer.h">
+    <ClInclude Include="Application/TanksDoc.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Application/TanksView.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Application/targetver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Application/ViewTree.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Model/Tank.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller/MapModifier.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw/BitmapDrawer.h">
       <Filter>Draw</Filter>
     </ClInclude>
-    <ClInclude Include="BitmapDrawer.h">
+    <ClInclude Include="Draw/Bitmaps.h">
       <Filter>Draw</Filter>
     </ClInclude>
-    <ClInclude Include="CreateDrawers.h">
+    <ClInclude Include="Model/Bullet.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model/Burrier.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw/CreateDrawers.h">
       <Filter>Draw</Filter>
     </ClInclude>
-    <ClInclude Include="IdGenerator.h">
-      <Filter>Modules</Filter>
+    <ClInclude Include="Model/IdGenerator.h">
+      <Filter>Model</Filter>
     </ClInclude>
-    <ClInclude Include="Bitmaps.h">
+    <ClInclude Include="Draw/IDrawer.h">
       <Filter>Draw</Filter>
     </ClInclude>
-    <ClInclude Include="DrawContext.h">
+    <ClInclude Include="Model/Map.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model/MapGenerator.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model/MapObject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model/MapObjectData.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model/MapObjectVisitor.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw/DrawContext.h">
       <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="MapModifier.h">
-      <Filter>Control</Filter>
-    </ClInclude>
-    <ClInclude Include="Notifier.h">
-      <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="MapObjectVisitor.h">
-      <Filter>Modules</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tanks.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MainFrm.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="TanksDoc.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="TanksView.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="FileView.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassView.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewTree.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="OutputWnd.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="PropertiesWnd.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MapObject.cpp">
-      <Filter>Modules</Filter>
+    <ClCompile Include="Application/ClassView.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MapObjectData.cpp">
-      <Filter>Modules</Filter>
+    <ClCompile Include="Application/FileView.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Tank.cpp">
-      <Filter>Modules</Filter>
+    <ClCompile Include="Application/MainFrm.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Burrier.cpp">
-      <Filter>Modules</Filter>
+    <ClCompile Include="Application/Notifier.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Bullet.cpp">
-      <Filter>Modules</Filter>
+    <ClCompile Include="Application/OutputWnd.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp">
-      <Filter>Modules</Filter>
+    <ClCompile Include="Application/PropertiesWnd.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="BitmapDrawer.cpp">
+    <ClCompile Include="Application/TanksDoc.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Application/TanksView.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Application/ViewTree.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\MapModifier.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw/BitmapDrawer.cpp">
       <Filter>Draw</Filter>
     </ClCompile>
-    <ClCompile Include="CreateDrawers.cpp">
+    <ClCompile Include="Model/Bullet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model/Burrier.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw/CreateDrawers.cpp">
       <Filter>Draw</Filter>
     </ClCompile>
-    <ClCompile Include="IdGenerator.cpp">
-      <Filter>Modules</Filter>
-    </ClCompile>
-    <ClCompile Include="DrawContext.cpp">
+    <ClCompile Include="Draw/DrawContext.cpp">
       <Filter>Draw</Filter>
     </ClCompile>
-    <ClCompile Include="MapModifier.cpp">
-      <Filter>Control</Filter>
+    <ClCompile Include="Model/IdGenerator.cpp">
+      <Filter>Model</Filter>
     </ClCompile>
-    <ClCompile Include="Notifier.cpp">
-      <Filter>Draw</Filter>
+    <ClCompile Include="Model/Map.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model/MapObject.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model/MapObjectData.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model/Tank.cpp">
+      <Filter>Model</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
