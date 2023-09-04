@@ -31,7 +31,7 @@ public:
   ~Map();
   virtual const MapObject* FindObject(Point) const override;
   std::vector<std::pair<size_t, GeneralMapObjectData>> GetGeneralData() const override;
-  virtual void SetGeneralData(std::vector<std::pair< size_t, GeneralMapObjectData>>& objects) override;
+  virtual void SetGeneralData(const std::vector<std::pair< size_t, GeneralMapObjectData>>& objects) override;
   virtual void UpdateObject(size_t id, MapObjectData data) override;
   
   virtual void AddBullet(MapObjectData data, BulletType type) override
@@ -59,7 +59,7 @@ private:
   virtual Size GetSize() override { return m_size; }
   //virtual const Bullet& GetBullets() {}
 
-  void AddMapObject(GeneralMapObjectData& data)
+  void AddMapObject(const GeneralMapObjectData& data)
   {
     std::visit(
           [&](auto&& val) 
@@ -234,7 +234,7 @@ std::optional<MapObjectData> Map::GetMapObjectData(size_t id)
   return result; // obj ? obj->GetMapObjectData() : MapObjectData{};
 
 }
-void Map::SetGeneralData(std::vector<std::pair< size_t, GeneralMapObjectData>>& objects)
+void Map::SetGeneralData(const std::vector<std::pair< size_t, GeneralMapObjectData>>& objects)
 {
   m_burriers.clear();
   m_EnemyTanks.clear();

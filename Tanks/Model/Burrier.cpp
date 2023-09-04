@@ -4,7 +4,7 @@
 #define new DEBUG_NEW
 #endif
 
-Burrier::Burrier(MapObjectData& data, BarrierType type, IdGenerator& generator) 
+Burrier::Burrier(const MapObjectData& data, BarrierType type, IdGenerator& generator) 
   : MapObject(data, generator)
   , m_type(type) 
 {

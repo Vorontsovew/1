@@ -5,7 +5,7 @@
 class Tank : public MapObject
 {
 public:
-  Tank(MapObjectData& data, TankType, IdGenerator& generator);
+  Tank(const MapObjectData& data, TankType, IdGenerator& generator);
   TankType GetType();
   virtual void Accept(MapObjectVisitor&) override;
   void SetData(MapObjectData data);

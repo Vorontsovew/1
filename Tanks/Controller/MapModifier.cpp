@@ -72,7 +72,7 @@ void MapModifier::Save()
 void MapModifier::Load()
 {
   std::ifstream in("output.txt");
-  in >> hile(in)
+  //in >> hile(in)
   in.close();
 }
 

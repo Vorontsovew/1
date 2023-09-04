@@ -5,7 +5,7 @@
 #define new DEBUG_NEW
 #endif
 
-Tank::Tank(MapObjectData& data, TankType type, IdGenerator& generator) : MapObject(data, generator), m_type(type) 
+Tank::Tank(const MapObjectData& data, TankType type, IdGenerator& generator) : MapObject(data, generator), m_type(type) 
 {
 }
 

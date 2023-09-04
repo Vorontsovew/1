@@ -6,7 +6,7 @@
 class Burrier : public MapObject
 {
 public:
-  Burrier(MapObjectData&, BarrierType, IdGenerator&);
+  Burrier(const MapObjectData&, BarrierType, IdGenerator&);
   BarrierType GetType();
   virtual void Accept(MapObjectVisitor&) override;
 
